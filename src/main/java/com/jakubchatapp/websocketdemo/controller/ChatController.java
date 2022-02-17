@@ -10,16 +10,18 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class ChatController {
 
+    // Send the message to the chat -> The method takes the ChatMessage body from the request and returns the chatMessage object to the endpoint for further
+    // processing
     @MessageMapping("/chat.sendMessage")
     @SendTo("/topic/public")
     public ChatMessage sendMessage(@Payload ChatMessage chatMessage) {
         return chatMessage;
     }
 
+    // This method adds a new user with his username to the websocket server session
     @MessageMapping("/chat.addUser")
-    @SendTo("/topic/public")
+    @SendTo("topic/public")
     public ChatMessage addUser(@Payload ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor) {
-        //Add username in web socket session
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         return chatMessage;
     }
