@@ -1,7 +1,7 @@
 # Chat-Room
 
 ## Description
-Chat Room - As the name implies it is a chat room that works based on websockets. Once a user has typed in a username that they will be using in the webapp they can send messages in the global chat room for all of the connected users to see.
+Chat Room - As the name implies it is a chat room that works based on WebSockets. Once a user has typed in a username that they will be using in the web app they can send messages in the global chat room for all of the connected users to see.
 
 ## Tech Stack Used In The Application
   - Backend: Java 11,
