@@ -27,7 +27,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #128ff2;
+    background: #be7516;
     content: "";
     z-index: 0;
 }
@@ -99,7 +99,7 @@ button.primary {
 }
 
 button.accent {
-    background-color: #ff4743;
+    background-color: #be7516;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
@@ -111,7 +111,7 @@ button.accent {
 .username-page-container {
     background: #fff;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    border-radius: 2px;
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
     display: inline-block;
