@@ -27,7 +27,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #be7516;
+    background: #a5c8de;
     content: "";
     z-index: 0;
 }
@@ -99,7 +99,7 @@ button.primary {
 }
 
 button.accent {
-    background-color: #be7516;
+    background-color: #1FA9FF;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
